@@ -1,74 +1,19 @@
-<h1 align="center">🧠 AI Doctor with Vision and Voice</h1>
+<h1 align="center">🩺 AI Doctor with Vision and Voice</h1>
 
 <p align="center">
-  <i>A multimodal AI-powered medical assistant that listens to patients, analyzes medical images, and responds with spoken diagnosis — built using Groq, LLaMA 3.2 Vision, Whisper, and Google TTS.</i>
+  <i>A multimodal AI medical assistant that can listen, see, analyze, and speak — simulating a doctor-patient interaction using speech, vision, and language models.</i>
 </p>
 
 ---
 
 ## 🧩 **Project Overview**
 
-This project simulates a **virtual doctor** that can:
-- 🗣️ **Listen** to a patient’s voice input  
-- 👁️ **Analyze** an uploaded medical image  
-- 🧑‍⚕️ **Respond** with a spoken medical opinion  
+This project integrates **speech recognition**, **image analysis**, and **text-to-speech** technologies to build an intelligent AI assistant that acts like a doctor.  
+The user can **speak their symptoms**, **upload a medical image**, and receive a **spoken diagnosis** — all through a single interface.
 
-It integrates **speech recognition**, **computer vision**, and **text-to-speech** into a unified web app built with **Gradio**, creating a natural and interactive healthcare assistant experience.
+By combining **Groq’s Whisper & LLaMA Vision models**, **Google Text-to-Speech**, and **Gradio**, this project demonstrates a practical use of **multimodal AI** in healthcare simulation.
 
 ---
 
-## 🎯 **Objective**
-
-The goal of this project is to demonstrate how multimodal AI can:
-- Understand **voice-based patient inputs**  
-- Interpret **visual medical information**  
-- Generate **human-like medical advice** in natural speech  
-- Provide a **realistic doctor-patient interaction** interface  
-
-> ⚠️ *Note: This project is built purely for educational and research purposes — not for medical diagnosis.*
-
----
-
-## 🏗️ **System Architecture**
-
-The system consists of three main components:
-
-| Component | Function | Model/Library Used |
-|------------|-----------|-------------------|
-| **Voice of Patient** | Records and transcribes patient’s voice | Groq Whisper Large v3 |
-| **Brain of Doctor** | Analyzes the medical image and forms diagnosis | LLaMA 3.2 Vision (via Groq API) |
-| **Voice of Doctor** | Converts diagnosis text to speech | Google Text-to-Speech (gTTS) |
-| **User Interface** | Allows users to speak and upload images | Gradio |
-
----
-
-## ⚙️ **How It Works**
-
-1. **Patient Interaction (Input):**  
-   The user records their voice describing symptoms and optionally uploads a medical image (like a skin condition photo).
-
-2. **Speech Transcription (Whisper):**  
-   The recorded audio is processed using **Groq Whisper Large v3** to convert speech into text.
-
-3. **Image Analysis (LLaMA 3.2 Vision):**  
-   The text and image are combined and sent to **LLaMA 3.2 Vision**, which interprets the image and generates a realistic, doctor-like diagnosis.
-
-4. **Doctor’s Voice (gTTS):**  
-   The AI doctor’s text response is converted into speech using **Google Text-to-Speech** and played back to the user.
-
-5. **Interface (Gradio):**  
-   Everything is integrated into a single **web interface** where users can interact in real time.
-
----
-
-## 🧠 **System Workflow**
-
-```mermaid
-flowchart TD
-    A[🎤 Patient speaks symptoms] --> B[🔊 Groq Whisper STT converts speech to text]
-    B --> C[🧩 Image (optional) uploaded by user]
-    C --> D[🤖 Groq LLaMA Vision analyzes image + text]
-    D --> E[💬 Generates doctor-like diagnosis]
-    E --> F[🔊 gTTS converts text to voice]
-    F --> G[🎧 User hears AI doctor's voice response]
+## 🧠 **System Architecture**
 
