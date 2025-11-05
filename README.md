@@ -90,9 +90,5 @@ To develop a **virtual doctor assistant** capable of:
 
 ---
 
-## 🚀 How to Run the Project
 
-### 1️⃣ Clone the Repository
-```bash
-git clone [https://github.com/Abhiee123/AI-Doctor-with-Vision-and-Voice.git](https://github.com/Abhiee123/AI-Doctor-with-Vision-and-Voice.git)
-cd AI-Doctor-with-Vision-and-Voice
+
